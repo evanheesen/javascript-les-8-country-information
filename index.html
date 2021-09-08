@@ -1,10 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Shadows+Into+Light&display=swap');
+    </style>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
 <body>
 
+<div class="header">
+    <h1>Let's search some country information!</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Hyperlink-internet-search.svg/768px-Hyperlink-internet-search.svg.png" alt="image world" width="250" class="center">
+</div>
+
+<div class="search-bar">
+    <input type="search" name="input-country" id="inputField" placeholder="Typ a country name">
+    <button id="search-button">Search</button>
+</div>
+
+<div class="not-found-message">
+    <p id="not-found"></p>
+</div>
+
+<div class="country">
+    <img src="" alt="image flag" id="flag-country" width="250">
+    <h2 id="name-country"></h2>
+    <p id="descriptionCountry"></p>
+    <p id="languages-text"></p>
+</div>
+
+<script src="node_modules/axios/dist/axios.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
